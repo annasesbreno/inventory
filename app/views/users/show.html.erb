@@ -1,0 +1,20 @@
+<head>
+  <style>
+  body {font-size:20px; color:#2d2d2d; margin:0; background-color:#f9f9f9;}
+  button {font-size:12px;}
+  h1 {color:#605e66;}
+  </style>
+<center><h1>Pet Shop Inventory</h1></center>
+<br>
+
+<% provide(:title, @user.name) %>
+<div class="row">
+<aside class="col-md-4">
+  <section class="user_info">
+    <h1>
+      <%= @user %>
+      <%= @user.name %>
+    </h1>
+  </section>
+</aside>
+</div>

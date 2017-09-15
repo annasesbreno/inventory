@@ -1,0 +1,23 @@
+<head>
+  <style>
+  body {font-size:20px; color:#2d2d2d; margin:0; background-color:#f9f9f9;}
+  button {font-size:12px;}
+  h1 {color:#605e66;}
+  </style>
+</head>
+
+<center>
+	<h1>Pet Shop Inventory</h1>
+</center>
+
+<center>
+	<h2>Log In</h2>
+</center>
+
+<%= form_tag '/login' do %>
+<center>
+  Email: <%= text_field_tag :email %><br>
+  Password: <%= password_field_tag :password %><br>
+  <%= submit_tag "Submit" %>
+</center>
+<% end %>

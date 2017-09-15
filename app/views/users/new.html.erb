@@ -1,0 +1,21 @@
+<head>
+  <style>
+  body {font-size:20px; color:#2d2d2d; margin:0; background-color:#f9f9f9;}
+  button {font-size:12px;}
+  h1 {color:#605e66;}
+  </style>
+
+<center>
+  <h1>Pet Shop Inventory</h1>
+  <h2>Signup</h2>
+</center>
+
+<%= form_for :user, url: '/users' do |f| %>
+<center>
+  Name: <%= f.text_field :name %><br>
+  Email: <%= f.text_field :email %><br>
+  Password: <%= f.password_field :password %><br>
+  Password Confirmation: <%= f.password_field :password_confirmation %><br>
+ <%= f.submit "Submit" %>
+</center>
+<% end %>

@@ -1,0 +1,22 @@
+<head>
+  <style>
+  body {font-size:20px; color:#2d2d2d; margin:0; background-color:#f9f9f9;}
+  button {font-size:12px;}
+  h1 {color:#605e66;}
+  .topnav {overflow: hidden; background-color: #4f4e4f;}
+  .topnav a {float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
+  .topnav a:hover {background-color: #605e66; color: black;}
+  </style>
+</head>
+<div class="topnav">
+  <a class="active" href="/animals">Home</a>
+  <a href="/animals/new">New Animal</a>
+  <a href="/show_inventory">Inventory</a>
+</div>
+<br>
+<center><h1>Pet Shop Inventory</h1></center>
+<br>
+
+<center><h2>New Animal</h2>
+
+<%= render 'form', animal: @animal %>
